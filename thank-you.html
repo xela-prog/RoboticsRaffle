@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You - Dawson Robotics</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+        .text-primary {
+            color: #1E40AF;
+        }
+        .text-text-primary {
+            color: #0F172A;
+        }
+        .text-text-secondary {
+            color: #475569;
+        }
+        .bg-success-100 {
+            background-color: #D1FAE5;
+        }
+        .border-success {
+            border-color: #10B981;
+        }
+        .text-success {
+            color: #10B981;
+        }
+        .shadow-card {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .shadow-subtle {
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            DEFAULT: '#4169E1',
+                            50: '#EEF2FF',
+                            100: '#E0E7FF',
+                            500: '#4169E1',
+                            600: '#3B5BDB',
+                            700: '#364FC7',
+                        },
+                        secondary: {
+                            DEFAULT: '#1E40AF',
+                            50: '#EFF6FF',
+                            100: '#DBEAFE',
+                            500: '#1E40AF',
+                            600: '#1D4ED8',
+                            700: '#1E3A8A',
+                        },
+                        accent: {
+                            DEFAULT: '#F59E0B',
+                            50: '#FFFBEB',
+                            100: '#FEF3C7',
+                            500: '#F59E0B',
+                            600: '#D97706',
+                            700: '#B45309',
+                        },
+                        surface: {
+                            DEFAULT: '#F8FAFC',
+                            100: '#F1F5F9',
+                            200: '#E2E8F0',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="min-h-screen flex items-center justify-center px-4 py-8 relative">
+    <!-- Background Image -->
+    <div class="absolute inset-0 z-0">
+        <img 
+            src="assets/club_photo.jpg" 
+            alt="Dawson Robotics Club" 
+            class="w-full h-full object-cover"
+        >
+    </div>
+    
+    <div class="w-full max-w-md relative z-10">
+        <!-- Card Container -->
+        <div class="bg-white/80 rounded-lg shadow-card p-8">
+            <!-- Success Icon -->
+            <div class="text-center mb-6">
+                <div class="inline-flex items-center justify-center w-20 h-20 bg-success-100 rounded-full mb-4">
+                    <svg class="w-10 h-10 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                </div>
+                <h1 class="text-4xl font-bold text-primary mb-2">Thank You!</h1>
+            </div>
+            
+            <!-- Message -->
+            <div class="text-center space-y-4 mb-8">
+                <p class="text-lg text-text-primary font-semibold">
+                    Thank you for participating in our raffle!
+                </p>
+                <p class="text-text-secondary">
+                    We appreciate your support and wish you the best of luck.
+                </p>
+                <p class="text-sm text-text-secondary">
+                    You should receive a confirmation email shortly.
+                </p>
+            </div>
+
+            <!-- Return Home Button -->
+            <a 
+                href="index.html" 
+                class="block w-full bg-primary/90 hover:bg-primary-600 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 shadow-subtle hover:shadow-card transform hover:-translate-y-0.5 text-center"
+            >
+                Return Home
+            </a>
+        </div>
+    </div>
+</body>
+</html>
