@@ -102,7 +102,7 @@
             <form id="raffleForm" action="https://formsubmit.co/raffledawson@gmail.com" method="POST" class="space-y-6">
                 <!-- Name Field -->
                 <div>
-                    <label for="name" class="block text-sm font-semibold text-text-primary mb-2">
+                    <label for="Name of the user" class="block text-sm font-semibold text-text-primary mb-2">
                         Full Name <span class="text-error">*</span>
                     </label>
                     <input 
@@ -117,7 +117,7 @@
 
                 <!-- Email Field -->
                 <div>
-                    <label for="email" class="block text-sm font-semibold text-text-primary mb-2">
+                    <label for="E-mail of the user" class="block text-sm font-semibold text-text-primary mb-2">
                         Email Address <span class="text-error">*</span>
                     </label>
                     <input 
@@ -132,7 +132,7 @@
 
                 <!-- Program Field -->
                 <div>
-                    <label for="program" class="block text-sm font-semibold text-text-primary mb-2">
+                    <label for="Program of The user" class="block text-sm font-semibold text-text-primary mb-2">
                         Program <span class="text-error">*</span>
                     </label>
                     <input 
@@ -141,6 +141,21 @@
                         name="program" 
                         required 
                         placeholder="Enter your program"
+                        class="w-full px-4 py-3 border bg-white/60 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
+                    >
+                </div>
+
+                <!-- Amount of Tickets -->
+                <div>
+                    <label for="Number of Tickets" class="block text-sm font-semibold text-text-primary mb-2">
+                        Number of Tickets <span class="text-error">*</span>
+                    </label>                
+                    <input 
+                        type="number" 
+                        id="tickets" 
+                        name="tickets" 
+                        required 
+                        placeholder="Enter the number of tickets"
                         class="w-full px-4 py-3 border bg-white/60 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
                     >
                 </div>
